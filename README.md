@@ -1,6 +1,7 @@
 # PromptHub - AI Prompt Library
 
-A modern, responsive full-stack application for managing, organizing, and saving your reusable AI prompts. Built with React on the frontend and Express/MongoDB on the backend.
+A modern, responsive full-stack application for managing, organizing, and saving your reusable AI prompts. Built with React on the frontend and Express/MongoDB on the backend. 
+
 
 ## Features
 
