@@ -1,0 +1,71 @@
+.navbar {
+  min-height: 76px;
+
+  padding: 16px 24px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.navbar-label {
+  color: #9ca3af;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.navbar h1 {
+  margin-top: 2px;
+
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-button {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  background: white;
+  color: #6b7280;
+}
+
+.icon-button:hover {
+  background: #f3f4f6;
+}
+
+.add-prompt-button {
+  border: none;
+  border-radius: 8px;
+
+  padding: 10px 14px;
+
+  background: #111827;
+  color: white;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.add-prompt-button:hover {
+  background: #374151;
+}

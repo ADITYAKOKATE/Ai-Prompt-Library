@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #1f2937;
+  background: #f8fafc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+  background-color: #070503; /* Inverted #f8fafc */
+}
+
+body.dark-mode img,
+body.dark-mode video,
+body.dark-mode svg {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body.dark-mode .prompt-card,
+body.dark-mode .dashboard-card,
+body.dark-mode .modal-content,
+body.dark-mode .sidebar {
+  box-shadow: none !important;
+  border-color: #d1d5db !important; /* Will be inverted to dark */
+}

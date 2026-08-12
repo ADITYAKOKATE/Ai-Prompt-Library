@@ -1,0 +1,172 @@
+.prompt-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.search-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.search-wrapper input {
+  width: 100%;
+
+  height: 42px;
+
+  padding: 0 14px 0 38px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #111827;
+
+  outline: none;
+}
+
+.search-wrapper input:focus {
+  border-color: #9ca3af;
+
+  box-shadow:
+    0 0 0 3px rgba(107, 114, 128, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+
+  left: 14px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #9ca3af;
+
+  pointer-events: none;
+}
+
+.search-shortcut {
+  position: absolute;
+
+  right: 10px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  padding: 3px 6px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+
+  background: #f9fafb;
+
+  color: #9ca3af;
+
+  font-size: 10px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-select-wrapper {
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0 10px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #6b7280;
+}
+
+.filter-select-wrapper select,
+.sort-select {
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #374151;
+
+  font-size: 12px;
+}
+
+.favorite-filter {
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 0 12px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #6b7280;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.favorite-filter:hover {
+  background: #f9fafb;
+}
+
+.favorite-filter.active {
+  border-color: #d1d5db;
+
+  background: #f3f4f6;
+
+  color: #111827;
+}
+
+.sort-select {
+  height: 42px;
+
+  padding: 0 10px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+
+  background: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .prompt-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-group {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .filter-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filter-select-wrapper,
+  .favorite-filter,
+  .sort-select {
+    width: 100%;
+  }
+}

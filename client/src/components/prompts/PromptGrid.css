@@ -1,0 +1,43 @@
+.prompt-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+}
+
+.empty-state {
+  padding: 60px 20px;
+
+  text-align: center;
+
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+.empty-state h3 {
+  font-size: 16px;
+}
+
+.empty-state p {
+  margin-top: 6px;
+
+  color: #9ca3af;
+
+  font-size: 13px;
+}
+
+@media (max-width: 1200px) {
+  .prompt-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .prompt-grid {
+    grid-template-columns: 1fr;
+  }
+}
